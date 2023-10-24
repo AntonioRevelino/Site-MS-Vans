@@ -16,10 +16,33 @@
   
   .imagemLogo{
     width: 20%;
+    
   }
 
   .imagens{
     width: 30px;
+    left: 10%;
+  }
+
+  .imagem1{
+    width: 30px;
+    
+    left: 10%;
+  }
+  .imagem2{
+    width: 30px;
+    
+    left: 10%;
+  }
+  .imagem3{
+    width: 30px;
+    
+    left: 10%;
+  }
+  .imagem4{
+    width: 30px;
+    
+    left: 10px;
   }
 
   /* Container for flexboxes */
