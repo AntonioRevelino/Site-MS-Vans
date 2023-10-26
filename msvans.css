@@ -1,12 +1,15 @@
+/*
 * {
     box-sizing: border-box;
   }
   
   body {
+    background-color: rgb(131, 117, 80);
     font-family: Arial, Helvetica, sans-serif;
+    color: rgb(180, 177, 202);
   }
   
-  /* Style the header */
+  /* Style the header 
   .cabecalho {
     background-color: #f1f1f1;
     padding: 30px;
@@ -16,7 +19,7 @@
   
   .imagemLogo{
     width: 20%;
-    
+    display: flex;
   }
 
   .imagens{
@@ -45,32 +48,156 @@
     left: 10px;
   }
 
-  /* Container for flexboxes */
+  /* Container for flexboxes 
   .row {
     display: -webkit-flex;
     display: flex;
   }
   
-  /* Create three equal columns that sits next to each other */
+  /* Create three equal columns that sits next to each other 
   .corpo {
     -webkit-flex: 1;
     -ms-flex: 1;
     flex: 1;
     padding: 10px;
-    height: 300px; /* Should be removed. Only for demonstration */
-  }
+    height: 300px;} /* Should be removed. Only for demonstration */
   
-  /* Style the footer */
+  
+  /* Style the footer 
   .rodape {
     background-color: #f1f1f1;
     padding: 10px;
     text-align: center;
   }
   
-  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other 
   @media (max-width: 600px) {
     .row {
       -webkit-flex-direction: column;
       flex-direction: column;
     }
   }
+*/
+
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  /*overflow: hidden;*/  /*Esse código sem o hidden, usar para fazer as redes socias nas laterais da pagina*/
+  background-color: #333;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  font-size: 35px;
+  display: flex;
+  display: -webkit-flex;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.imagemLogo{
+  display: flex;
+  left: 100%;
+}
+
+.imagens{
+  width: 30px;
+  left: 10%;
+}
+
+.imagem1{
+  width: 30px;
+  
+  left: 10%;
+}
+.imagem2{
+  width: 30px;
+  
+  left: 10%;
+}
+.imagem3{
+  width: 30px;
+  
+  left: 10%;
+}
+.imagem4{
+  width: 30px;
+  
+  left: 10px;
+}
+
+/* Style the content */
+.corpopag {
+  background-color: #ddd;
+  padding: 10px;
+  height: 200px; /* Should be removed. Only for demonstration */
+}
+
+/* Container for flexboxes */
+  .row {
+    display: -webkit-flex;
+    display: flex;
+  }
+
+/* Style the footer */
+.rodape {
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media (max-width: 600px) {
+    .row {
+      -webkit-flex-direction: column;
+      flex-direction: column;
+    }
+  }
+/*
+  .list-social>.item {
+    display: inline-block;
+    margin: 0 8px 15px;
+    text-align: center;
+}
+
+.list-social>.item>a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background: #ccc;
+    color: #fff;
+    -webkit-box-shadow: 0 0 0 5px rgba(0,0,0,.1);
+    -moz-box-shadow: 0 0 0 5px rgba(0,0,0,.1);
+    box-shadow: 0 0 0 5px rgba(0,0,0,.1);
+    border-radius: 50%;
+}
+
+.list-social>.item>a:hover {
+    -webkit-box-shadow: 0 0 0 4px rgba(0,0,0,.1);
+    -moz-box-shadow: 0 0 0 4px rgba(0,0,0,.1);
+    box-shadow: 0 0 0 4px rgba(0,0,0,.1)
+}
+*/
