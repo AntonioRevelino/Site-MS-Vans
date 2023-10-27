@@ -78,7 +78,6 @@
     }
   }
 */
-
 * {
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
@@ -127,27 +126,6 @@ body {
   left: 10%;
 }
 
-.imagem1{
-  width: 30px;
-  
-  left: 10%;
-}
-.imagem2{
-  width: 30px;
-  
-  left: 10%;
-}
-.imagem3{
-  width: 30px;
-  
-  left: 10%;
-}
-.imagem4{
-  width: 30px;
-  
-  left: 10px;
-}
-
 /* Style the content */
 .corpopag {
   background-color: #ddd;
@@ -155,18 +133,30 @@ body {
   height: 200px; /* Should be removed. Only for demonstration */
 }
 
+.titulo{
+  padding: 10px;
+  margin: 0 auto;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.subtitulo{
+  padding: 15px;
+  margin: 0 auto;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.conteudo{
+  padding: 25px;
+  margin: 0 auto;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
 /* Container for flexboxes */
   .row {
     display: -webkit-flex;
     display: flex;
   }
-
-/* Style the footer */
-.rodape {
-  background-color: #f1f1f1;
-  padding: 10px;
-}
-
+*/
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
   @media (max-width: 600px) {
     .row {
@@ -174,7 +164,7 @@ body {
       flex-direction: column;
     }
   }
-/*
+
   .list-social>.item {
     display: inline-block;
     margin: 0 8px 15px;
@@ -200,4 +190,14 @@ body {
     -moz-box-shadow: 0 0 0 4px rgba(0,0,0,.1);
     box-shadow: 0 0 0 4px rgba(0,0,0,.1)
 }
-*/
+
+.item{
+  position: relative;
+}
+
+/* Style the footer */
+.rodape {
+  background-color: #f1f1f1;
+  padding: 10px;
+  position: relative;
+}
